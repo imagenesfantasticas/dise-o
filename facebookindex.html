@@ -1,0 +1,152 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bienvenidos</title>
+<meta name="generator" content="WYSIWYG Web Builder 9 - http://www.wysiwygwebbuilder.com">
+<style type="text/css">
+body
+{
+   margin: 0;
+   padding: 0;
+   background-color: #FFFFFF;
+   color: #000000;
+}
+</style>
+<style type="text/css">
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+</style>
+<style type="text/css">
+#RollOverText1 p
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 13px;
+   margin: 0;
+   padding: 0px 10px 0px 10px;
+   text-align: center;
+}
+#RollOverText1 a
+{
+   display: inline-block;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   font-style: normal;
+   color: #FFFFFF;
+   padding: 0px 10px 10px 10px;
+   text-decoration: underline;
+}
+#RollOverText1 .title
+{
+   text-align: center;
+   padding: 10px 10px 0px 10px;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: bold;
+   color: #FFFFFF;
+}
+#RollOverText1 .caption
+{
+   float: left;
+   position: absolute;
+   text-align: center;
+   width: 1398px;
+   background: #000000;
+   width: 100%;
+   opacity: 0;
+   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+   -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+#Button1
+{
+   border: 2px #FFFFFF solid;
+   background-color: #3B5998;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 13px;
+}
+#Editbox1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#Editbox2
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+</style>
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   $("#RollOverText1").hover(function()
+   {
+      var y = $(this).height() - $(".caption", this).height();
+      $(".caption", this).css("top", y);
+      $(".caption", this).stop().animate({opacity: 0.60},{queue:false, duration:500});
+   }, function()
+   {
+      $(".caption", this).stop().animate({opacity: 0},{queue:false, duration:500});
+   });
+});
+</script>
+</head>
+<body>
+   <form method="post" action="sumando.php"/>
+   <div id="RollOverText1" style="position:absolute;overflow:hidden;left:0px;top:0px;width:1398px;height:768px;z-index:0;">
+      <img class="hover" alt="Title" src="facebook.png" style="position:absolute;border-width:0;left:0px;top:0px;width:1398px;height:768px;">
+      <div style="left:0px;top:0px" class="caption">
+         <div class="title">Title</div>
+         <p>Image description goes here</p>
+         <a href="" target="">More information</a>
+      </div>
+   </div>
+   <input type="submit" id="Button1" name="" value="Entrar" style="position:absolute;left:532px;top:338px;width:72px;height:29px;z-index:1;">
+   <input type="password" id="Editbox1" style="position:absolute;left:535px;top:279px;width:190px;height:19px;line-height:19px;z-index:2;" name="pass" value="">
+   <input type="text" id="Editbox2" style="position:absolute;left:534px;top:224px;width:190px;height:19px;line-height:19px;z-index:3;" name="usua" value="">
+   <input type="checkbox" id="Checkbox1" name="Checkbox1" value="on" style="position:absolute;left:538px;top:310px;z-index:4;">
+   <div id="wb_Text1" style="position:absolute;left:521px;top:173px;width:259px;height:16px;z-index:5;text-align:left;">
+      <span style="color:#bdb76b;font-family:arial;font-size:13px;">tienes que iniciar sesión para continuar</span>
+   </div>
+</body>
+</html>
